@@ -1,0 +1,10 @@
+.popup__main-container {
+   width: 494px;
+   display: grid;
+}
+
+@media (max-width: 550px) {
+   .popup__main-container {
+     width: 282px;
+   }
+ }
