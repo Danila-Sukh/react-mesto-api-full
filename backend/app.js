@@ -44,7 +44,7 @@ app.get('/crash-test', () => {
   }, 0);
 });
 
-app.post('/sign-in', loginValidation, login);
+app.post('/signin', loginValidation, login);
 app.post('/signup', userValidation, createUser);
 app.get('/signout', signout);
 
