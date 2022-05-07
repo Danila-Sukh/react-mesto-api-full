@@ -49,7 +49,7 @@ class Auth {
 }
 
 const auth = new Auth({
-  baseUrl: "https://dsukh.nomoredomains.work",
+  baseUrl: "https://api.dsukh.nomoredomains.work",
   headers: {
     "Content-Type": "application/json",
   },
