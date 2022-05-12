@@ -25,7 +25,7 @@ const options = {
   allowedHeaders: ['Content-Type', 'origin', 'Authorization'],
   credentials: true,
 };
-app.use('*', cors(options));
+app.use(cors());
 
 mongoose.connect('mongodb://localhost:27017/mestodb', {
   useNewUrlParser: true,
