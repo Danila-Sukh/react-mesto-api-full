@@ -1,4 +1,4 @@
-const baseUrl = "https://dsukh.nomoredomains.work";
+const baseUrl = "https://api.dsukh.nomoredomains.work";
 
 class AuthApi {
   constructor(config) {
