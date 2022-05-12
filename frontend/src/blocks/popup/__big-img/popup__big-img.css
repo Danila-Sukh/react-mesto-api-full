@@ -1,0 +1,12 @@
+.popup__big-img {
+  max-width: 75vw;
+  max-height: 75vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__big-img {
+    width: 240px;
+    height: 299px;
+  }
+}

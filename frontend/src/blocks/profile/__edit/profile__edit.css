@@ -1,0 +1,25 @@
+.profile__edit {
+  border: 1px solid #FFFFFF;
+  padding: 7px 7px 7px 7px;
+  color: inherit;
+  background: transparent center no-repeat url(../../../images/Vector.svg);
+  margin-top: 15px;
+  width: 24px;
+  height: 24px;
+
+}
+
+.profile__edit:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+  .profile__edit {
+    padding: 5.25px 5.25px 5.25px 5.25px;
+    margin-top: 8px;
+    width: 18px;
+    height: 18px;
+  }
+}

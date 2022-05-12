@@ -1,0 +1,9 @@
+.element__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 216px;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 25px;
+}
