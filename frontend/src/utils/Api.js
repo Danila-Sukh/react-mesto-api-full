@@ -104,7 +104,7 @@ class Api {
 }
 
 const api = new Api({
-  url: "https://api.dsukh.nomoredomains.work"
+  url: "https://dsukh.nomoredomains.work"
 });
 
 export default api;
