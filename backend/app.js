@@ -15,8 +15,6 @@ const { PORT = 3000 } = process.env;
 const app = express();
 app.use(cors({
   origin: [
-    'https://api.dsukh.nomoredomains.work',
-    'http://api.dsukh.nomoredomains.work',
     'https://dsukh.nomoredomains.work/',
     'http://dsukh.nomoredomains.work/', 
     'http://localhost:3000',
