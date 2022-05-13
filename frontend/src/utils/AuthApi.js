@@ -20,7 +20,6 @@ class AuthApi {
   authorization({ email, password }) {
     return fetch(this.url + "/sign-in", {
       method: "POST",
-      credentials: 'include',
       headers: {
         "Content-Type": "application/json",
       },
@@ -33,7 +32,6 @@ class AuthApi {
   getContent(token) {
     return fetch(this.url + "/users/me", {
       method: "GET",
-      credentials: 'include',
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
