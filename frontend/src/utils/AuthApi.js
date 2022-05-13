@@ -18,7 +18,7 @@ class AuthApi {
   }
 
   authorization({ email, password }) {
-    return fetch(this.url + "/signin", {
+    return fetch(this.url + "/sign-in", {
       method: "POST",
       credentials: 'include',
       headers: {
