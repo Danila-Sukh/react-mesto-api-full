@@ -1,0 +1,22 @@
+.popup__text {
+  height: 40px;
+  width: 358px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 17px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.popup__text:hover {
+  cursor: text;
+}
+
+@media (max-width: 550px) {
+  .popup__text {
+    width: 238px;
+  }
+}
