@@ -109,7 +109,7 @@ class Api {
 
 
 const api = new Api({
-  baseUrl: 'https://api.dsukh.nomoredomains.work',
+  baseUrl: 'https://dsukh.nomoredomains.work',
   headers: {
     'Content-Type': 'application/json'
   }
