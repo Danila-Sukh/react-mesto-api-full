@@ -13,14 +13,22 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const { PORT = 3000 } = process.env;
 const app = express();
-app.use(cors({
-  origin: [
-    'https://dsukh.nomoredomains.work/',
-    'http://dsukh.nomoredomains.work/', 
-    'http://localhost:3000',
-  ],
-  credentials: true,
-}));
+const cors = (req, res, next) => {
+  const { origin } = req.headers;
+  const { method } = req;
+  const requestHeaders = req.headers['access-control-request-headers'];
+  const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
+  res.header('Access-Control-Allow-Origin', origin);
+  res.header('Access-Control-Allow-Credentials', true);
+  if (method === 'OPTIONS') {
+    res.header('Access-Control-Allow-Methods', DEFAULT_ALLOWED_METHODS);
+    res.header('Access-Control-Allow-Headers', requestHeaders);
+    return res.end();
+  }
+  return next();
+};
+
+app.use(cors);
 
 
 mongoose.connect('mongodb://localhost:27017/mestodb', {
