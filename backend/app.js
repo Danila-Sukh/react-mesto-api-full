@@ -15,7 +15,7 @@ const { PORT = 3000 } = process.env;
 const app = express();
 
 
- app.use('*'({
+ app.use(({
    credentials: true,
  }));
  app.use('*', cors);
