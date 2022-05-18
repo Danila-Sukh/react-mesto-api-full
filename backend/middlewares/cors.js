@@ -18,4 +18,6 @@ const cors = (req, res, next) => {
   return next();
 };
 
+app.use(cors);
+
 module.exports = cors;
