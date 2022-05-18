@@ -39,7 +39,7 @@ class Auth {
     return fetch(`${this._url}/users/me`, {
       method: "GET",
       mode: 'cors',
-      credentials: 'include',
+      credentials: 'true',
       headers: {
         ...this._headers,
         Authorization: `Bearer ${token}`,
