@@ -15,7 +15,7 @@ class Api {
     return fetch(`${this.url}/users/me`, {
       method: "GET",
       mode: 'cors',
-      credentials: 'include',
+      credentials: 'true',
       headers: this.headers
     })
       .then(res => this._handleFetch(res));
@@ -26,7 +26,7 @@ class Api {
     return fetch(`${this.url}/cards`, {
       method: "GET",
       mode: 'cors',
-      credentials: 'include',
+      credentials: 'true',
       headers: this.headers
     })
       .then(res => this._handleFetch(res));
