@@ -35,7 +35,7 @@ class Api {
   addNewCard(name, link) {
     return fetch(`${this.url}/cards`, {
       method: "POST",
-      credentials: 'include',
+      credentials: 'true',
       headers: this.headers,
       body: JSON.stringify({
         name: name,
@@ -56,7 +56,7 @@ class Api {
   removeLike(id) {
     return fetch(`${this.url}/cards/${id}/likes`, {
       method: "DELETE",
-      credentials: 'include',
+      credentials: 'true',
       headers: this.headers
     })
       .then(res => this._handleFetch(res));
@@ -65,7 +65,7 @@ class Api {
   addLike(id) {
     return fetch(`${this.url}/cards/${id}/likes`, {
       method: "PUT",
-      credentials: 'include',
+      credentials: 'true',
       headers: this.headers
     })
       .then(res => this._handleFetch(res));
@@ -75,7 +75,7 @@ class Api {
   deleteCard(elementId) {
     return fetch(`${this.url}/cards/${elementId}`, {
       method: "DELETE",
-      credentials: 'include',
+      credentials: 'true',
       headers: this.headers
     })
       .then(res => this._handleFetch(res));
@@ -84,7 +84,7 @@ class Api {
   setUserInfo(name, about) {
     return fetch(`${this.url}/users/me`, {
       method: "PATCH",
-      credentials: 'include',
+      credentials: 'true',
       headers: this.headers,
       body: JSON.stringify({
         name: name,
@@ -97,7 +97,7 @@ class Api {
   updateAvatar(link) {
     return fetch(`${this.url}/users/me/avatar`, {
       method: "PATCH",
-      credentials: 'include',
+      credentials: 'true',
       headers: this.headers,
       body: JSON.stringify({
         avatar: link
