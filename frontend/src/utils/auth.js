@@ -1,7 +1,7 @@
 class Auth {
-  constructor({ baseUrl, headers }) {
-    this._url = baseUrl;
-    this._headers = headers;
+  constructor(options) {
+    this._url = options.baseUrl;
+    this._headers = options.headers;
   }
 
   _handleOriginalResponse(res) {
