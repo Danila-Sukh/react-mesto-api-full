@@ -18,7 +18,7 @@ const app = express();
    origin: 'https://dsukh.nomoredomains.work',
    credentials: true,
  }));
-app.use(cors());
+app.use(cors);
 
 
 
