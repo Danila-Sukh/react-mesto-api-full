@@ -16,7 +16,10 @@ const { validateUrl } = require('./method/validateUrl');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
-app.use(cors);
+ app.use(cors({
+   origin: ' https://dsukh.nomoredomains.work/',
+   credentials: true,
+ }));
 
 app.use(cookieParser());
 app.use(express.json());
