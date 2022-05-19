@@ -145,11 +145,12 @@ function App() {
   function handleLoginSubmit(password, userName) {
     auth
       .authorize({password, userName})
-      .then((data) => {
-        console.log(data);
-        localStorage.setItem("email", userName);
-        handleLoginSuccess(userName);
-        history.push("/");
+      .then(data => {
+        if (data.token) {
+          const token = data.token;
+          localStorage.setItem('jwt', token);
+          tokenCheck();
+          setLoggedIn(true);
       })
       .catch((err) => {
         console.log(err);
