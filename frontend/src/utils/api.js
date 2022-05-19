@@ -1,7 +1,7 @@
 class Api {
   constructor(options) {
-    this.url = baseUrl;
-    this.headers = headers;
+    this.url = options.baseUrl;
+    this.headers = options.headers;
   }
 
   _handleFetch(res) {
