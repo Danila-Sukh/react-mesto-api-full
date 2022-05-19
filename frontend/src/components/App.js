@@ -146,11 +146,10 @@ function App() {
     auth
       .authorize({password, userName})
       .then(data => {
-        if (data.token) {
-          const token = data.token;
-          localStorage.setItem('jwt', token);
-          tokenCheck();
-          setLoggedIn(true);
+        console.log(data);
+        localStorage.setItem("email", userName);
+        handleLoginSuccess(userName);
+        history.push("/");
       })
       .catch((err) => {
         console.log(err);
