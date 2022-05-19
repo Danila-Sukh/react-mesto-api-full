@@ -144,7 +144,7 @@ function App() {
 
   function handleLoginSubmit(password, userName) {
     auth
-      .authorize({password, userName})
+      .authorize(password, userName)
       .then(data => {
         console.log(data);
         localStorage.setItem("email", userName);
