@@ -5,7 +5,7 @@ const { PORT = 3000 } = process.env;
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const { celebrate, Joi, errors } = require('celebrate');
-const cors = require('./middlewares/cors');
+const cors = require('cors');
 const routes = require('./routes');
 const usersRout = require('./routes/users');
 const cardsRout = require('./routes/cards');
@@ -16,7 +16,20 @@ const { validateUrl } = require('./method/validateUrl');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
- app.use(cors);
+ app.use(cors({
+  origin: [
+    'https://api.dsukh.nomoredomains.work',
+    'https://dsukh.nomoredomains.work', 
+    'http://localhost:3000',
+    'http://api.dsukh.nomoredomains.work',
+    'http://dsukh.nomoredomains.work', 
+  ],
+  methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+  allowedHeaders: ['Content-Type', 'origin', 'Authorization'],
+  credentials: true,
+}));
 
 app.use(cookieParser());
 app.use(express.json());
