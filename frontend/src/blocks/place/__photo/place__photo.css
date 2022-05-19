@@ -1,0 +1,12 @@
+.place__photo {
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+@media screen and (max-width: 880px) {
+  .place__photo {
+    max-width: 100%;
+  }
+}

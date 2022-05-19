@@ -1,0 +1,15 @@
+.place__remove-button {
+  width: 18px;
+  height: 19px;
+  background-image: url(../../../images/trash.svg);
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 21px;
+  top: 26px;
+  border: none;
+  outline: none;
+  padding: 0;
+}
