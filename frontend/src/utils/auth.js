@@ -14,7 +14,7 @@ class Auth {
   register(password, email) {
     return fetch(`${this._url}/signup`, {
       method: "POST",
-      credentials: 'true',
+      credentials: 'include',
       headers: this._headers,
       body: JSON.stringify({
         password: password,
@@ -26,7 +26,7 @@ class Auth {
   authorize(password, email) {
     return fetch(`${this._url}/signin`, {
       method: "POST",
-      credentials: 'true',
+      credentials: 'include',
       headers: this._headers,
       body: JSON.stringify({
         password: password,
@@ -39,7 +39,7 @@ class Auth {
     return fetch(`${this._url}/users/me`, {
       method: "GET",
       mode: 'cors',
-      credentials: 'true',
+      credentials: 'include',
       headers: {
         ...this._headers,
         Authorization: `Bearer ${token}`,
