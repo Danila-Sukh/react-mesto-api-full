@@ -17,7 +17,6 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
  app.use(cors({
-   origin: ' https://dsukh.nomoredomains.work/',
    credentials: true,
  }));
 
