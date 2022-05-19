@@ -11,12 +11,6 @@ class Api {
     return Promise.reject(`Ошибка: ${res.status}`);
   }
 
-  getAppInfo(token) {
-    this._token = token;
-
-    return Promise.all([this.getUserInfo(), this.getInitialCards()]);
-  }
-
   getUserInfo() {
     return fetch(`${this.url}/users/me`, {
       method: 'GET',
@@ -115,9 +109,8 @@ class Api {
 
 
 const api = new Api({
-  baseUrl: 'https://dsukh.nomoredomains.work',
+  baseUrl: 'https://api.dsukh.nomoredomains.work',
   headers: {
-    Authorization: `Bearer ${this._token}`,
     'Content-Type': 'application/json'
   }
 })
