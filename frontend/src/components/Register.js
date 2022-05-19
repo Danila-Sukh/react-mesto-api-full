@@ -1,5 +1,5 @@
 import React from "react";
-import {auth} from '../utils/auth'
+import { auth } from "../utils/auth";
 import { withRouter } from 'react-router-dom';
 
 function Register(props) {
