@@ -147,7 +147,7 @@ function App() {
       .authorize({password, userName})
       .then(data => {
         console.log(data);
-        localStorage.setItem("email", data.email);
+        localStorage.setItem("email", userName);
         handleLoginSuccess(userName);
         history.push("/");
       })
