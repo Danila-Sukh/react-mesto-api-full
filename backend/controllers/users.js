@@ -154,5 +154,5 @@ module.exports.login = (req, res, next) => {
 };
 
 module.exports.signout = (req, res) => {
-  res.status(200).clearCookie('jwt').send({ message: 'Выход' });
+  res.status(200).clearCookie('jwt').send();
 };
