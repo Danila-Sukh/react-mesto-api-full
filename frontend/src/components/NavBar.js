@@ -15,13 +15,12 @@ function NavBar(props) {
                 activeClassName="menu__item_active"
                 to=""
             >{props.email}</NavLink>
-            {route === '' &&
-            (<NavLink
+            <NavLink
             className="menu__item"
             activeClassName="menu__item_active"
             to="/sign-in"
             onClick={props.loggedOut}
-            >Выход</NavLink>)}
+            >Выход</NavLink>
         </nav>)
     } else {
         return (<nav className="menu">
