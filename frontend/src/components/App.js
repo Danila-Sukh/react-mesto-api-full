@@ -214,7 +214,6 @@ function App() {
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <Header
-        path="/"
         email={authUserEmail}
         loggedIn={loggedIn}
         loggedOut={handleLogout}
