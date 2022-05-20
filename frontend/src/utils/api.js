@@ -1,7 +1,7 @@
 class Api {
-  constructor({ url, headers }) {
-    this.url = baseUrl;
-    this.headers = headers;
+  constructor(options) {
+    this.url = options.baseUrl;
+    this.headers = options.headers;
   }
 
   _handleFetch(res) {
@@ -117,7 +117,6 @@ class Api {
 const api = new Api({
   baseUrl: 'https://api.dsukh.nomoredomains.work',
   headers: {
-    Authorization: `Bearer ${this._token}`,
     'Content-Type': 'application/json'
   }
 })
