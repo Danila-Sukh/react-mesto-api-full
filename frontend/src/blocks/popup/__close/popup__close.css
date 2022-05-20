@@ -1,0 +1,23 @@
+.popup__close {
+  margin: 0 0 8px 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent url(../../../images/Close-Icon.svg) no-repeat center;
+  background-size: contain;
+  justify-self: end;
+  transition: transform 1s;
+}
+
+.popup__close:hover {
+  cursor: pointer;
+  transform: rotate(0.25turn);
+}
+
+@media (max-width: 550px) {
+  .popup__close {
+    margin: 0 0 16px 0;
+    width: 20px;
+    height: 20px;
+  }
+}
