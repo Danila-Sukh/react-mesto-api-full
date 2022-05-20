@@ -11,6 +11,11 @@ function NavBar(props) {
     if (props.loggedIn) {
         return (<nav className="menu">
             <NavLink
+                className="menu__item"
+                activeClassName="menu__item_active"
+                to=""
+            >{props.email}</NavLink>                
+            <NavLink
             className="menu__item"
             activeClassName="menu__item_active"
             to="/sign-in"
