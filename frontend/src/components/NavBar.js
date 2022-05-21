@@ -19,7 +19,7 @@ function NavBar(props) {
                 className="menu__item"
                 activeClassName="menu__item_active"
                 to=""
-                onClick={props.loggedOut}
+                onClick={props.loggedIn}
             >Выход</NavLink>
         </nav>)
     } else {
