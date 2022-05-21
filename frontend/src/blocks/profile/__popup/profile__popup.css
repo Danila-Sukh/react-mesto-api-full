@@ -1,0 +1,25 @@
+.profile__popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 120px;
+  height: 120px;
+  opacity: 0;
+  transition: opacity linear 0.3s;
+}
+
+.profile__popup:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 615px) {
+  .profile__popup {
+    margin: auto;
+    right: 0;
+  }
+}
