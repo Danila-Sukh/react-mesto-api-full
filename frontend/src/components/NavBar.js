@@ -17,7 +17,8 @@ function NavBar(props) {
             >{props.email}</NavLink>
             <NavLink
                 className="menu__item"
-                to="/sign-in"
+                activeClassName="menu__item_active"
+                to=""
                 onClick={props.loggedOut}
             >Выход</NavLink>
         </nav>)
@@ -26,6 +27,7 @@ function NavBar(props) {
             {route === 'sing-in' &&
                 (<NavLink
                     className="menu__item"
+                    activeClassName="menu__item_active"
                     to="/sign-up"
                     onClick={handleRouteChange}
                 >Регистрация</NavLink>)}
@@ -33,6 +35,7 @@ function NavBar(props) {
                 (<NavLink
                     exact
                     className="menu__item"
+                    activeClassName="menu__item_active"
                     to="/sign-in"
                     onClick={handleRouteChange}
                 >Вход</NavLink>)}
