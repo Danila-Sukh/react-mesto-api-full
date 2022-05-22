@@ -19,7 +19,7 @@ function NavBar(props) {
             exact
             className="menu__item"
             activeClassName="menu__item_active"
-            to="/sign-in"
+            to=""
             onClick={props.loggedOut}
             >Выход</NavLink>
         </nav>)
