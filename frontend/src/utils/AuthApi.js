@@ -1,8 +1,8 @@
-const url = "https://api.dsukh.nomoredomains.work";
+const baseUrl = "https://api.dsukh.nomoredomains.work";
 
 class AuthApi {
-  constructor({ url }) {
-    this.url = url;
+  constructor(options) {
+    this.url = options.baseUrl;
   }
 
   register({ email, password }) {
