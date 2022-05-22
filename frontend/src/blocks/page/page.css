@@ -1,0 +1,10 @@
+.page {
+   min-width: 320px;
+   background-color: #000;
+   display: grid;
+   justify-content: center;
+   font-family: 'Inter', Arial, Helvetica, sans-serif;
+   font-weight: 400;
+   color: #fff;
+   margin: 0 auto;
+}
