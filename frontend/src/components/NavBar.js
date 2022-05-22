@@ -35,6 +35,7 @@ function NavBar(props) {
             >Вход</NavLink>)}
             {route === 'sing-in' &&
             (<NavLink
+                exact
                 className="menu__item"
                 activeClassName="menu__item_active"
                 to="/sign-up"
