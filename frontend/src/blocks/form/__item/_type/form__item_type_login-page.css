@@ -1,0 +1,22 @@
+.form__item_type_login-page {
+    font-style: normal;
+    font-weight: normal;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #CCCCCC;
+    background-color: #000;
+    border: 0;
+    width: 260px;
+    border-bottom: 2px solid #CCCCCC;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .form__item_type_login-page {
+        width: 358px;
+    }
+}

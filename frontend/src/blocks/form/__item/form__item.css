@@ -1,0 +1,17 @@
+.form__item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    border: 0;
+    width: 238px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    line-height: 1.22;
+    color: #000000;
+    margin-top: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+    .form__item {
+        width: 358px;
+    }
+}
