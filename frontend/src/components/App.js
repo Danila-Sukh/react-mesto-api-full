@@ -190,6 +190,7 @@ function App() {
   function handleRegisterNotSuccess() {
     setIsInfoTooltipOpen(true);
     setLoggedIn(false);
+    setLoggedIn(true);
   }
 
   function handleLogout() {
