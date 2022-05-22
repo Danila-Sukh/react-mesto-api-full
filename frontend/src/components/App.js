@@ -165,7 +165,6 @@ function App() {
   }
 
   function handleLoginNotSuccess() {
-    setLoggedIn(true);
     setIsInfoTooltipOpen(true);
     setLoggedIn(false);
   }
