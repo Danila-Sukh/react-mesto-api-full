@@ -26,6 +26,7 @@ function NavBar(props) {
         return (<nav className="menu">
             {route === 'sing-up' &&
             (<NavLink
+                exact
                 className="menu__item"
                 activeClassName="menu__item_active"
                 to="/sign-in"
