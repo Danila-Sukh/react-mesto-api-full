@@ -6,7 +6,7 @@ class AuthApi {
   }
 
   register({ email, password }) {
-    return fetch(this.url + "/signup", {
+    return fetch(this.url + "/sign-up", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
