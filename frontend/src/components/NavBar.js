@@ -11,7 +11,7 @@ function NavBar(props) {
                 activeClassName="menu__item_active"
                 to=""
             >{props.email}</NavLink>
-            <Route path="">
+            <Route path="/">
             <NavLink
                 className="menu__item"
                 activeClassName="menu__item_active"
