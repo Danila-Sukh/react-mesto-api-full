@@ -158,7 +158,7 @@ function App() {
   }
 
   function handleLoginSuccess(email) {
-    setLoggedIn(true);
+    setLoggedIn(false);
     setAuthUserEmain(email);
     api.getUserInfo()
     .then((user) => setCurrentUser(user))
