@@ -165,7 +165,6 @@ function App() {
   }
 
   function handleLoginNotSuccess() {
-    setLoggedIn(false);
     setIsInfoTooltipOpen(true);
     setLoggedIn(false);
   }
@@ -184,12 +183,10 @@ function App() {
 
   function handleRegisterSuccess() {
     setIsInfoTooltipOpen(true);
-    setLoggedIn(false);
   }
 
   function handleRegisterNotSuccess() {
     setIsInfoTooltipOpen(true);
-    setLoggedIn(false);
   }
 
   function handleLogout() {
