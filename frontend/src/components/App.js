@@ -173,7 +173,7 @@ function App() {
     auth.register(password, userName).then((data) => {
       console.log(data);
       handleRegisterSuccess();
-      history.push("/sign-up");
+      history.push("/sign-in");
     })
     .catch((err) => {
       console.log(err);
