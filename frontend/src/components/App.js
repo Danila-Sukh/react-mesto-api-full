@@ -183,7 +183,7 @@ function App() {
 
   function handleRegisterSuccess() {
     setIsInfoTooltipOpen(true);
-    setLoggedIn(false);
+    setLoggedIn(true);
   }
 
   function handleRegisterNotSuccess() {
