@@ -158,7 +158,7 @@ function App() {
   }
 
   function handleLoginSuccess(email) {
-    setLoggedIn(false);
+    setLoggedIn(true);
     setAuthUserEmain(email);
     api.getUserInfo()
     .then((user) => setCurrentUser(user))
@@ -166,7 +166,6 @@ function App() {
 
   function handleLoginNotSuccess() {
     setIsInfoTooltipOpen(true);
-    setLoggedIn(false);
   }
 
   function handleRegisterSubmit(password, userName) {
