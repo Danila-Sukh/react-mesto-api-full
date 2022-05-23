@@ -166,7 +166,7 @@ function App() {
 
   function handleLoginNotSuccess() {
     setIsInfoTooltipOpen(true);
-    setLoggedIn(false);
+    setLoggedIn(true);
   }
 
   function handleRegisterSubmit(password, userName) {
