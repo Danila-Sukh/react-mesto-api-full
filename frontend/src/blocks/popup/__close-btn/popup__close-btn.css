@@ -1,0 +1,9 @@
+.popup__close-btn {
+   margin-right: -32px;
+}
+
+@media (max-width: 550px) {
+   .popup__close-btn {
+     margin-right: 0;
+   }
+ }
