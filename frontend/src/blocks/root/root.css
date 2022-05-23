@@ -1,0 +1,12 @@
+.root {
+  background-color: #000000;
+  font-family:"Inter", Helvetica, Arial,sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  min-height: 100vh;
+}

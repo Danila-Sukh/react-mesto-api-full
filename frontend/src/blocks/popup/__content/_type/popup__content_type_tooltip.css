@@ -1,0 +1,15 @@
+.popup__content_type_tooltip {
+    text-align: center;
+    padding: 60px 36px 60px 36px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;
+    margin: 0;
+}
+
+/* @media screen and (min-width: 1024px) {
+    .popup__content_type_tooltip {
+        padding: 50px 18px 50px 18px;
+    }
+} */

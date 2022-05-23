@@ -1,0 +1,9 @@
+.element {
+  width: 282px;
+  padding-bottom: 31px;
+  background-color: #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
