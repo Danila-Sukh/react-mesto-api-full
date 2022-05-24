@@ -1,0 +1,10 @@
+.page__places {
+  margin: 0 auto;
+  padding: 50px 0 67px;
+}
+
+@media screen and (max-width: 920px) {
+  .page__places {
+    padding: 36px 19px 48px;
+  }
+}
