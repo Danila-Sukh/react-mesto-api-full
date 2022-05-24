@@ -1,6 +1,0 @@
-@media screen and (max-width: 550px) {
-  .header_column-reverse {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
