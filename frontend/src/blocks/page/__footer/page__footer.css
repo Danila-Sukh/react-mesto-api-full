@@ -1,0 +1,10 @@
+.page__footer {
+  max-width: 880px;
+  padding: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .page__footer {
+    padding-left: 19px;
+  }
+}

@@ -1,0 +1,9 @@
+.place {
+  max-width: 282px;
+  min-width: 282px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
